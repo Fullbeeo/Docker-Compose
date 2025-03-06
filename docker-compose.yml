@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    ports:
+      - 5000:5000
+    networks:
+      - ciaomondo
+  sommatoria2:
+    build: .\somma
+    ports:
+      - 3000:3000
+    networks:
+      - ciaomondo
+    volumes:
+      - risultato:/app
+
+networks:
+  ciaomondo: {}
+volumes:
+   risultato:
+
+    
