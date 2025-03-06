@@ -18,7 +18,7 @@ COPY . .
 
 
 # Espone la porta su cui l'applicazione gira
-EXPOSE 3000
+EXPOSE 5000
 
 
 # Definisce il comando per avviare l'applicazione
